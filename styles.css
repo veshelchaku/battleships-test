@@ -1,0 +1,98 @@
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+#field-container {
+    width: 768px;
+    margin: auto;
+}
+
+#field {
+    margin: auto;
+    width: 640px;
+    height: 640px;
+    border: 1px solid #344e8a;
+    line-height: 0;
+}
+
+.coordinates-item {
+    display: inline-block;
+    text-align: center;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    font-family: monospace;
+    color: #344e8a;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#top-coordinates {
+    margin: auto;
+    width: 640px;
+}
+
+#left-coordinates {
+    width: 64px;
+    position: absolute;
+}
+
+.cell {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border: 1px solid #344e8a;
+}
+
+.cell:hover {
+    background-color: #9d95e240;
+}
+
+.cell.missed::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:#344e8a;
+    position: absolute;
+    content: " ";
+    margin: 21px;
+}
+
+.cell.damaged::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #b1428a;
+    position: absolute;
+    content: " ";
+    margin: 21px;
+}
+
+.cell.destroyed::after {
+    width: 62px;
+    height: 62px;
+    background-color: #5b7cb9;
+    position: absolute;
+    content: " ";
+}
+
+#win-screen {
+    top: 0;
+    height: 720px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 30px;
+    line-height: 720px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #21345f;
+    display: none;
+}
+
+#win-misses {
+    top: 64px;
+    width: 100%;
+    position: absolute;
+}
