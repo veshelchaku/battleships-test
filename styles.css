@@ -46,7 +46,7 @@
 }
 
 .cell:hover {
-    background-color: #9d95e240;
+    background-color: rgba(157, 149, 226, 0.25);
 }
 
 .cell.missed::after {
